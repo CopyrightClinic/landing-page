@@ -95,12 +95,20 @@
 }
 
 .hero-background {
-  position: absolute;
+  /* position: absolute;
   top: 0;
   left: -50%;
   right: -50%;
   height: 100%;
-  background: url('./assets/webHero.png') no-repeat center center;
+  background: url('./assets/webHero.png') no-repeat center center; */
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    background: url('./assets/webHero.png') no-repeat center center;
+    background-size: cover;
+    max-width: 100%;
 }
 
 .hero-container {
@@ -801,7 +809,7 @@
    =================================== */
 @media (min-width: 1024px) {
   .landing-header-container {
-    padding: 1rem 3.125rem;
+    padding: 1rem 0rem;
   }
 
   .hero-section {
@@ -854,7 +862,7 @@
    =================================== */
 @media (min-width: 1440px) {
   .landing-header-container {
-    padding: 1rem 3.125rem;
+    padding: 1rem 0rem;
   }
 
   .hero-section {
