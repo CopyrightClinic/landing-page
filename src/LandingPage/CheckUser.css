@@ -1,0 +1,220 @@
+/* ===================================
+   CHECK USER PAGE STYLES
+   =================================== */
+
+.check-user-form-wrapper {
+  background: rgba(26, 31, 46, 0.4);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 0.75rem;
+  padding: 2rem;
+  margin-top: 1rem;
+}
+
+.check-user-form {
+  margin-bottom: 1.5rem;
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+.form-label {
+  display: block;
+  font-size: 0.938rem;
+  font-weight: 500;
+  color: #ffffff;
+  margin-bottom: 0.5rem;
+}
+
+.form-input {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  font-size: 1rem;
+  color: #ffffff;
+  background: rgba(15, 20, 35, 0.6);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 0.5rem;
+  transition: all 0.2s;
+  font-family: inherit;
+  box-sizing: border-box;
+}
+
+.form-input:focus {
+  outline: none;
+  border-color: #5b6cf5;
+  background: rgba(15, 20, 35, 0.8);
+  box-shadow: 0 0 0 3px rgba(91, 108, 245, 0.1);
+}
+
+.form-input:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.form-input::placeholder {
+  color: #8892a6;
+}
+
+.form-submit-btn {
+  width: 100%;
+  padding: 0.875rem 1.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #ffffff;
+  background: #5b6cf5;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: all 0.2s;
+  font-family: inherit;
+}
+
+.form-submit-btn:hover:not(:disabled) {
+  background: #4a5bd4;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(91, 108, 245, 0.3);
+}
+
+.form-submit-btn:active:not(:disabled) {
+  transform: translateY(0);
+}
+
+.form-submit-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  transform: none;
+}
+
+/* Result Box Styles */
+.result-box {
+  display: flex;
+  gap: 1rem;
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  margin-top: 1.5rem;
+  animation: slideIn 0.3s ease-out;
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.result-success {
+  background: rgba(16, 185, 129, 0.1);
+  border: 1px solid rgba(16, 185, 129, 0.3);
+}
+
+.result-info {
+  background: rgba(59, 130, 246, 0.1);
+  border: 1px solid rgba(59, 130, 246, 0.3);
+}
+
+.result-error {
+  background: rgba(239, 68, 68, 0.1);
+  border: 1px solid rgba(239, 68, 68, 0.3);
+}
+
+.result-icon {
+  flex-shrink: 0;
+  width: 2.5rem;
+  height: 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+  border-radius: 50%;
+}
+
+.result-success .result-icon {
+  background: rgba(16, 185, 129, 0.2);
+  color: #10b981;
+}
+
+.result-info .result-icon {
+  background: rgba(59, 130, 246, 0.2);
+  color: #3b82f6;
+}
+
+.result-error .result-icon {
+  background: rgba(239, 68, 68, 0.2);
+  color: #ef4444;
+}
+
+.result-content {
+  flex: 1;
+}
+
+.result-title {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: #ffffff;
+  margin: 0 0 0.5rem;
+}
+
+.result-message {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #b8c5d6;
+  margin: 0 0 0.5rem;
+}
+
+.result-hint {
+  font-size: 0.875rem;
+  line-height: 1.5;
+  color: #8892a6;
+  margin: 0.5rem 0 0;
+  font-style: italic;
+}
+
+/* ===================================
+   TABLET STYLES (768px and up)
+   =================================== */
+@media (min-width: 768px) {
+  .check-user-form-wrapper {
+    padding: 2.5rem;
+  }
+
+  .form-input {
+    font-size: 1.063rem;
+  }
+
+  .form-submit-btn {
+    padding: 1rem 2rem;
+    font-size: 1.063rem;
+  }
+
+  .result-box {
+    padding: 2rem;
+  }
+
+  .result-icon {
+    width: 3rem;
+    height: 3rem;
+    font-size: 1.75rem;
+  }
+
+  .result-title {
+    font-size: 1.25rem;
+  }
+
+  .result-message {
+    font-size: 1.063rem;
+  }
+}
+
+/* ===================================
+   DESKTOP STYLES (1024px and up)
+   =================================== */
+@media (min-width: 1024px) {
+  .check-user-form-wrapper {
+    padding: 3rem;
+  }
+}

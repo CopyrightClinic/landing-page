@@ -12,6 +12,11 @@ export const LandingFooter: React.FC = () => {
           <span className="footer-separator">|</span>
           <a href="mailto:info@copyrightclinic.com" className="footer-link">Support</a>
         </div>
+        <div className="footer-check-account">
+          <Link to="/check-user" className="footer-check-link">
+            Check your account existence here
+          </Link>
+        </div>
         <p className="footer-copyright">© 2025 Copyright Clinic. All rights reserved.</p>
       </div>
     </footer>
